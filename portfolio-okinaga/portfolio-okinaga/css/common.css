@@ -28,7 +28,6 @@ h1 picture .header__logo-sp{
   position: fixed;
   top: 0;
   z-index: 100;
-
 }
 
 #header .header_nav ul,
@@ -44,9 +43,7 @@ h1 picture .header__logo-sp{
   font-weight: 250;
   padding: 8px 0;
 }
-.header_nav_main-page li{
-  /* color: #2d2d2d; */
-}
+
 .header__nav-sp{
   display: none;
 }

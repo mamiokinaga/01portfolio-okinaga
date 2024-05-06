@@ -267,10 +267,13 @@
             OKINAGA MAMI
           </p>
           <p class="text">
-            農業に従事、店販用のポップを作成し、デザインについて調べるうちに<br />ウェブデザインに興味を
-            持ち、２０２４年よりデザスタでデザインと、<br />
-            コーディングを学ぶ。
+            農業に従事、店販用のポップを作成し、デザインについて調べるうちにウェブデザインに興味を
+            持ち２０２４年よりデザスタでデザインとコーディングを学ぶ。
           </p>
+          <p class="text__more">学び始めたばかりで未熟な自分ですが、依頼者の方の希望に応えられる技術を身につけ、お役に立てられたらと思います。
+            写真スタジオ勤務経験があり、学校、幼稚園などの撮影、スタジオでは七五三、証明写真、婚礼のスナップ等の撮影をしていました。
+            使用できる言語・ツールhtml(visual studio code), css,jQuery./Illustrator,Photoshop.</p>
+          <button class="view__more_button">view more</button>
         </div>
       </div>
     </div>
@@ -296,17 +299,17 @@
       <li>
         <a href="./works/burger-banner.html">
           <p class="works__item-burger">
-            <img src="./images/burger.png" alt="" />
+            <img src="./images/burger.png" alt="バーガーバナー" />
           </p>
         </a>
         <p class="title">
-          <a href="./works/burger-banner.html">Hair Salon LP (架空)</a>
+          <a href="./works/burger-banner.html">WEB広告用バナーデザイン (架空)</a>
         </p>
       </li>
       <li>
         <a href="./works/sp-banner.html">
           <p class="works__spring-sale-banner">
-            <img src="./images/spring-sale.png" alt="" />
+            <img src="./images/spring-sale.png" alt="ＳＰバナー" />
           </p>
         </a>
         <p class="title">
@@ -316,7 +319,7 @@
       <li>
         <a href="./works/workers.html">
           <p class="works__item-workers">
-            <img src="./images/workers-mockup@2x.png" alt="" />
+            <img src="./images/workers-mockup@2x.png" alt="バナー" />
           </p>
         </a>
         <p class="title">
@@ -326,7 +329,7 @@
       <li>
         <a href="./works/trrip-banner.html">
           <p class="works__trip-banner">
-            <img src="./images/trip.png" alt="" />
+            <img src="./images/trip.png" alt="バナー" />
           </p>
         </a>
         <p class="title">
@@ -336,7 +339,7 @@
       <li>
         <a href="./works/cafe.html">
           <p class="works__cafe">
-            <img src="./images/design-cafe-mockup@2x.png" alt="" />
+            <img src="./images/design-cafe-mockup@2x.png" alt="カフェサイトバナー" />
           </p>
         </a>
         <p class="title">
@@ -436,9 +439,14 @@
           $(".header__inner").removeClass("change-color");
         }
       });
+      // ハンバーガーメニュー
       $(".hamburger").on("click", function () {
         $(".header__nav-sp").fadeToggle();
         $(".hamburger").toggleClass("open");
+      });
+      // view more button
+      $(".view__more_button").on("click", function () {
+        $(".text__more").toggleClass("open");
       });
 
       //ページ内スクロール

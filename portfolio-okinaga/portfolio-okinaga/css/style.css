@@ -162,7 +162,6 @@ img.grayscale-sky {
 .concept__image {
   width: 65%;
   min-width: 290px;
-  /* padding-top: 6%; */
   padding-bottom: 9%;
 }
 .concept__wrapper {
@@ -184,11 +183,7 @@ img.grayscale-sky {
 .concept__image-window window-frame{
   top: 0;
 }
-.concept__inner{
-  /* width: 50%; */
-}
 .concept__text {
-  /* margin-top: 127px; */
   font-size: 1.25rem;
   line-height: 2.1;
   letter-spacing: 0.04em;
@@ -280,10 +275,9 @@ img.grayscale-sky {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  gap: 4%;
+  /* gap: 4%; */
   max-width: 1000px;
 }
-
 .frame {
   position: absolute;
 }
@@ -316,15 +310,55 @@ img.grayscale-sky {
 }
 .text__wrapper {
   font-size: 30px;
+  margin-left: 5%;
 }
 .text__wrapper .name {
   font-size: 1.875rem;
-  margin-bottom: 60px;
+  margin-bottom: 4%;
+  margin-top: 6%;
 }
-#profile .text {
+#profile .text,
+#profile .text__more{
   font-size: 1.0625rem;
   line-height: 2.117;
 }
+#profile .text__more{
+  display: none;
+}
+#profile .text__more.open{
+  display: block;
+}
+.view__more_button{
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #2d2d2d;
+  color: #2d2d2d;
+  width: 97px;
+  padding-right: 1２px;
+}
+.view__more_button::before {
+	content: "";
+	display: block;
+	width: 13px;
+	height: 0.3px;
+	background: #2d2d2d;
+	rotate: 45deg;
+	position: absolute;
+	right: -2px;
+	bottom: 4.5px;
+}
+/* プロフィール910px以下はここから読み込み */
+@media screen and (max-width: 910px){
+  .portrait__wrapper{
+    display: block;
+    text-align: left;
+    padding-top: 5%;
+  }
+}
+
 /* プロフィール767px以下はここから読み込み */
 @media screen and (max-width: 767px) {
   .portrait__wrapper {
@@ -334,7 +368,8 @@ img.grayscale-sky {
     padding-top: 35px;
     margin-bottom: 40px;
   }
-  #profile .text {
+  #profile .text,
+  #profile .text__more {
     padding: 0 30 0 30;
     font-size: 15px;
   }
