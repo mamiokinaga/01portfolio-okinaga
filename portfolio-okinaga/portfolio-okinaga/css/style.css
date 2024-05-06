@@ -336,8 +336,10 @@ img.grayscale-sky {
   padding-bottom: 6px;
   border-bottom: 1px solid #2d2d2d;
   color: #2d2d2d;
-  width: 97px;
-  padding-right: 1２px;
+  width: 86px;
+  padding-right: 12px;
+  padding-top: 20px;
+  margin: 0 30px 0 83%;
 }
 .view__more_button::before {
 	content: "";

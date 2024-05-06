@@ -178,7 +178,7 @@ footer h1 picture img{
   position: absolute;
   content: "";
   width: 32px;
-  height: 1.5px;
+  height: 1.8px;
   background-color: white;
   top: 16px;
   transition: 0.5s;
@@ -191,7 +191,7 @@ footer h1 picture img{
   position: absolute;
   content: "";
   width: 23px;
-  height: 2px;
+  height: 1.8px;
   right: 0;
   background-color: white;
   bottom: -12px;
@@ -205,7 +205,7 @@ footer h1 picture img{
   position: absolute;
   content: "";
   width: 32px;
-  height: 2px;
+  height: 1.8px;
   right: 0;
   background-color: white;
   bottom: 12px;
@@ -278,7 +278,6 @@ h3 p{
   margin-bottom: 40px;
 }
 }
-
 
 /* フッター */
 footer .back-to-top_button{
