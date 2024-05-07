@@ -139,13 +139,11 @@ box-shadow: 2.5px 2.5px 10px #ddd9d9;
   width: 100%;
   font-size: 16px;
   line-height: 1.8;
-  /* font-family: Yu Gothic Pr6N R; */
 }
 /* hairsalon,workers 共通 */
 #display-image ul{
   display: flex;
   justify-content: space-between;
-  /* gap: 3%; */
 }
 #display-image ul .display-image__pc{
   width: 71%
@@ -157,6 +155,7 @@ box-shadow: 2.5px 2.5px 10px #ddd9d9;
 #images__only-sp{
   display: none;
 }
+
 /* 767px以下はここから読み込み*/
 @media screen and (max-width: 767px){
 #images__only-sp{
@@ -165,7 +164,6 @@ box-shadow: 2.5px 2.5px 10px #ddd9d9;
 #images__only-sp ul{
   display: flex;
   justify-content: space-between;
-  /* width: 100%; */
   gap: 30px;
 }
 #images__only-sp ul li img{
